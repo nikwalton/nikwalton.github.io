@@ -22,7 +22,8 @@ function About() {
                        like to make fun side projects, mentor students, and be part 
                        of clubs on campus. Some hobbies of mine include sports such
                        as rock climbing and fencing, and creative ones like 
-                       photography and 3D art and
+                       photography and 3D art. Check out the navbar to see more 
+                       of what I get up to!
                    </h5>
                </Col>
                <Col sm>
@@ -37,7 +38,7 @@ function About() {
                <Col sm>
                    <h5>
                    As a professional, I am looking for a place where I can both
-                   have a meaningful contribution and learn tremendosly on about
+                   make a meaningful contribution and learn tremendosly on about
                    new technology or topics in general. At university, I accomplished
                    this goal as president of the ACM Chapter on campus, and organizing
                    4 years of hackathons on campus in various capacities, allowing 

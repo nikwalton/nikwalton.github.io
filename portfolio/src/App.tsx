@@ -22,7 +22,7 @@ export default class App extends React.Component {
       <Router>
         
         <Container className='p-1' fluid={true}>
-          <Navbar expand='lg' bg='transparent'>
+          <Navbar expand='lg' bg='light' sticky='top'>
             <Navbar.Brand>Nikolaus Walton</Navbar.Brand>
             <Navbar.Toggle className='border-0' aria-controls='navbar-toggle'/> 
             <Navbar.Collapse id='navbar-toggle'>

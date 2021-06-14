@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 
 function Hero() {
@@ -14,6 +14,7 @@ function Hero() {
                     <Col md={8}>
                         <h1>Creating A Better Tomorrow</h1>
                         <h3>Exploring meaningful projects both technically and artistically</h3>
+                        <Button variant='outline-primary'>Resume</Button>
                     </Col>
                 </Row>
             </Container>
