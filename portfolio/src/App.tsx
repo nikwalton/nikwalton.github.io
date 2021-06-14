@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -9,10 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from './Components/Footer'
 import HomePage from './Pages/HomePage'
-import AboutPage from './Pages/AboutPage'
 import ProjectsPage from './Pages/ProjectsPage'
 import ArtPage from './Pages/ArtPage'
-import ContactPage from './Pages/ContactPage'
 
 export default class App extends React.Component {
 
@@ -28,7 +27,6 @@ export default class App extends React.Component {
             <Navbar.Collapse id='navbar-toggle'>
               <Nav className='ml-auto'>
                 <Link className='nav-link' to='/'>Home</Link>
-                <Link className='nav-link' to='/about'>About</Link>
                 <Link className='nav-link' to='/projects'>Projects</Link>
                 <Link className='nav-link' to='/art'>Art</Link>
                 <Link className='nav-link' to='/contact'>Contact</Link>
@@ -40,10 +38,7 @@ export default class App extends React.Component {
         
     
           <Route path='/' exact render={HomePage} />
-          <Route path='/about' exact render={AboutPage} />
-          <Route path='/projects' exact render={ProjectsPage} />
-          <Route path='/art' exact render={ArtPage} />
-          <Route path='/contact' exact render={ContactPage} />
+       
         <Footer />
         </Container>
       </Router>

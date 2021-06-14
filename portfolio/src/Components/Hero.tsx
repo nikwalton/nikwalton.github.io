@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Jumbotron from 'react-bootstrap/Jumbotron'
+import Card from 'react-bootstrap/Card'
 
 
 function Hero() {
@@ -15,6 +16,14 @@ function Hero() {
                         <h3>Exploring meaningful projects both Technically and Artistically</h3>
                         <h3>Here are some highlights</h3>
                     </Col>
+                </Row>
+                <br />
+                <br />
+                <Row className='justify-content-center'>
+                    <h3>Highlights</h3>
+                </Row>
+                <Row>
+                    
                 </Row>
             </Container>
         </Jumbotron>
