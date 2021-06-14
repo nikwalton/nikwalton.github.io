@@ -8,39 +8,13 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from './Components/Footer'
+import HomePage from './Pages/HomePage'
+import AboutPage from './Pages/AboutPage'
+import ProjectsPage from './Pages/ProjectsPage'
+import ArtPage from './Pages/ArtPage'
+import ContactPage from './Pages/ContactPage'
 
-class App extends React.Component {
-
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      title: "Nikolaus Walton",
-      header: [
-        {title: 'Home', path: '/'},
-        {title: 'About', path: '/about'},
-        {title: 'Projects', path: '/projects'},
-        {title: 'Art', path:'/art'},
-        {title: 'Contact', path:'/contact'}
-      ],
-      home: {
-        title: 'Technology and Art',
-        subtitle: 'Making a difference and telling stories using technology'
-      },
-      about: {
-        title: 'About'
-      },
-      projects: {
-        title: 'Projects'
-      },
-      art: {
-        title: 'Art'
-      },
-      contact: {
-        title: 'Find Me',
-        subtitle: 'Let\'s have a chat'
-      }
-    }
-  }
+export default class App extends React.Component {
 
   render()
   {
@@ -54,19 +28,25 @@ class App extends React.Component {
             <Navbar.Collapse id='navbar-toggle'>
               <Nav className='ms-auto'>
                 <Link className='nav-link' to='/'>Home</Link>
-                <Link className='nav-link' to='#about'>About</Link>
-                <Link className='nav-link' to='#projects'>Projects</Link>
-                <Link className='nav-link' to='#art'>Art</Link>
-                <Link className='nav-link' to='#contact'>Contact</Link>
+                <Link className='nav-link' to='/about'>About</Link>
+                <Link className='nav-link' to='/projects'>Projects</Link>
+                <Link className='nav-link' to='/art'>Art</Link>
+                <Link className='nav-link' to='/contact'>Contact</Link>
+
+   
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-        </Container>
-
+        
+    
+          <Route path='/' exact render={HomePage} />
+          <Route path='/about' exact render={AboutPage} />
+          <Route path='/projects' exact render={ProjectsPage} />
+          <Route path='/art' exact render={ArtPage} />
+          <Route path='/contact' exact render={ContactPage} />
         <Footer />
+        </Container>
       </Router>
     );
   }
 }
-
-export default App;
