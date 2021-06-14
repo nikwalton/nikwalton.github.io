@@ -47,15 +47,15 @@ class App extends React.Component {
         
         <Container className='p-1' fluid={true}>
           <Navbar className='border-bottom' expand='lg' bg='transparent'>
-            <Navbar.Brand>Nik Walton</Navbar.Brand>
+            <Navbar.Brand>Nikolaus Walton</Navbar.Brand>
             <Navbar.Toggle className='border-0' aria-controls='navbar-toggle'/> 
             <Navbar.Collapse id='navbar-toggle'>
               <Nav className='ms-auto'>
                 <Link className='nav-link' to='/'>Home</Link>
-                <Link className='nav-link' to='/'>About</Link>
-                <Link className='nav-link' to='/'>Projects</Link>
-                <Link className='nav-link' to='/'>Art</Link>
-                <Link className='nav-link' to='/'>Contact</Link>
+                <Link className='nav-link' to='/about'>About</Link>
+                <Link className='nav-link' to='/projects'>Projects</Link>
+                <Link className='nav-link' to='/art'>Art</Link>
+                <Link className='nav-link' to='/contact'>Contact</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
