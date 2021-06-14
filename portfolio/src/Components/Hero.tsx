@@ -1,13 +1,24 @@
 import React from 'react'
-import container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
-const Hero = () => (
-    <div className = 'hero'>
-        <h1>Hero Element</h1>
-    </div>
-);
 
-export default Hero
+function Hero() {
+    return (
+        <Jumbotron className='bg-transparent jumbotron-fluid p-5'>
+            <Container fluid={true}>
+                <Row className='justify-content-center'>
+                    <Col md={8}>
+                        <h1>Creating A Better Tomorrow</h1>
+                        <h3>Exploring meaningful projects both Technically and Artistically</h3>
+                        <h3>Here are some highlights</h3>
+                    </Col>
+                </Row>
+            </Container>
+        </Jumbotron>
+    );
+}
+
+export default Hero;

@@ -26,7 +26,7 @@ export default class App extends React.Component {
             <Navbar.Brand>Nikolaus Walton</Navbar.Brand>
             <Navbar.Toggle className='border-0' aria-controls='navbar-toggle'/> 
             <Navbar.Collapse id='navbar-toggle'>
-              <Nav className='ms-auto'>
+              <Nav className='ml-auto'>
                 <Link className='nav-link' to='/'>Home</Link>
                 <Link className='nav-link' to='/about'>About</Link>
                 <Link className='nav-link' to='/projects'>Projects</Link>
