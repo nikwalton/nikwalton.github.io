@@ -13,17 +13,8 @@ function Hero() {
                 <Row className='justify-content-center'>
                     <Col md={8}>
                         <h1>Creating A Better Tomorrow</h1>
-                        <h3>Exploring meaningful projects both Technically and Artistically</h3>
-                        <h3>Here are some highlights</h3>
+                        <h3>Exploring meaningful projects both technically and artistically</h3>
                     </Col>
-                </Row>
-                <br />
-                <br />
-                <Row className='justify-content-center'>
-                    <h3>Highlights</h3>
-                </Row>
-                <Row>
-                    
                 </Row>
             </Container>
         </Jumbotron>

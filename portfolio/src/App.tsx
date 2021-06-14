@@ -12,6 +12,7 @@ import Footer from './Components/Footer'
 import HomePage from './Pages/HomePage'
 import ProjectsPage from './Pages/ProjectsPage'
 import ArtPage from './Pages/ArtPage'
+import ContactPage from './Pages/ContactPage'
 
 export default class App extends React.Component {
 
@@ -38,8 +39,10 @@ export default class App extends React.Component {
         
     
           <Route path='/' exact render={HomePage} />
+          <Route path='/art' exact render={ArtPage} /> 
+          <Route path='/contact' exact render={ContactPage} />
+          <Route path='/projects' exact render={ProjectsPage} />
        
-        <Footer />
         </Container>
       </Router>
     );
