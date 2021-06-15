@@ -6,19 +6,25 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
 
 
+const JumboInline = {
+    padding: '3em',
+    margin: '1em'
+}
 function Hero() {
     return (
-        <Jumbotron className='jumbotron-fluid p-5'>
-            <Container fluid={true}>
+        <>
+        <Jumbotron style={JumboInline} className='p-auto'> 
+            <Container>
                 <Row className='justify-content-center'>
                     <Col md={8}>
-                        <h1>Creating A Better Tomorrow</h1>
-                        <h3>Exploring meaningful projects both technically and artistically</h3>
-                        <Button variant='outline-primary'>Resume</Button>
+                        <h1 className='text-white'>Creating A Better Tomorrow</h1>
+                        <h3 className='text-white'>Exploring meaningful projects both technically and artistically</h3>
+                        <Button variant='outline-light'>Resume</Button>
                     </Col>
                 </Row>
             </Container>
         </Jumbotron>
+        </>
     );
 }
 
