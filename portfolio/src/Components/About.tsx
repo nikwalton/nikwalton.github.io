@@ -22,32 +22,18 @@ function About() {
                         like to make fun side projects, mentor students, and be part
                         of clubs on campus.
                     </h5>
-                </Col>
-                <Col sm>
-
-                </Col>
-
-            </Row>
-            <Row>
-                <Col sm>
-
-                </Col>
-                <Col sm>
                     <h5>
                         As a professional, I am looking for a place where I can both
                         make a meaningful contribution and learn tremendosly on about
                         new technology or topics in general.
                     </h5>
-                    <h5>
-                        At university, I accomplished
-                        this goal as president of the ACM Chapter on campus, and organizing
-                        4 years of hackathons on campus in various capacities, allowing
-                        students to have a safe space to create without worrying about
-                        anything else for the weekend.
-                    </h5>
+                </Col>
+                <Col sm>
 
                 </Col>
+
             </Row>
+        
             <br />
             <br />
         </Container>
