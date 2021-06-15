@@ -1,13 +1,55 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
+import  CardDeck  from 'react-bootstrap/CardDeck'
+import Button from 'react-bootstrap/Button'
 
 function ProjectsPage() {
     return (
         <Container>
             <Row className='justify-content-center p-5'>
                 <h3>Personal Projects</h3>
+            </Row>
+            <Row>
+                <CardDeck>
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>
+                                Coug'sPlan
+                            </Card.Title>
+                            <Card.Subtitle>CPTS 479 Final Project, Spring 2021</Card.Subtitle>
+                            <Card.Text>
+                                Coug'sPlan is a utility iOS application that allows the user
+                                to manage all of their classes and to-do tasks in one
+                                space which would allow the user to see what is upcoming in their
+                                school schedule at a glance.
+                            </Card.Text>
+                            <Button href='https://github.com/nikwalton/CougsPlan'>Github Repo</Button>
+                      
+                        </Card.Body>
+                        <Card.Footer>
+                                <small>Swift, iOS, Mobile Development, Firebase</small>
+                            </Card.Footer>
+                    </Card>
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>
+                                Portfolio Website
+                            </Card.Title>
+                            <Card.Subtitle>Hey! Thats This Thing!</Card.Subtitle>
+                            <Card.Text>
+                              Personal Portfolio Website to show off all of my cool 
+                              projects and skills
+                            </Card.Text>
+                            <Button href='https://github.com/nikwalton/nikwalton.github.io'>Github Repo</Button>
+                      
+                        </Card.Body>
+                        <Card.Footer>
+                                <small>React, Typescript, Bootstrap</small>
+                            </Card.Footer>
+                    </Card>
+                </CardDeck>
             </Row>
         </Container>
     );

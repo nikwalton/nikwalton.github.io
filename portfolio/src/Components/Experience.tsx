@@ -22,7 +22,7 @@ function Experience() {
                             <Card.Subtitle className="mb-2 text-muted">August 2017 - March 2021</Card.Subtitle>
                        
                         <Card.Text>
-                            The CrimsonCode hackathon is Washington State Universities premiere
+                            The CrimsonCode hackathon is Washington State University's premiere
                             hackathon. As Director, my team of organizers and I planned, fundraised, and 
                             hosted 300 students over the course of a 24 weekend. In addition to directing the 
                             hackathon, I have helped organized an additional 3 years of hackathons in a lesser
