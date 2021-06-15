@@ -28,10 +28,12 @@ function About() {
                         new technology or topics in general.
                     </h5>
                 </Col>
-                <Col sm>
-
-                </Col>
-
+                {
+                //<Col sm>
+                
+                //</Col>
+                }
+                    
             </Row>
         
             <br />
