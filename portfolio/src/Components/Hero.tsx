@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button'
 
 function Hero() {
     return (
-        <Jumbotron className='bg-transparent jumbotron-fluid p-5'>
+        <Jumbotron className='jumbotron-fluid p-5'>
             <Container fluid={true}>
                 <Row className='justify-content-center'>
                     <Col md={8}>

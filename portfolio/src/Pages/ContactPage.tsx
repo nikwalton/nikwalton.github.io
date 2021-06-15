@@ -1,9 +1,20 @@
 import React from 'react'
+import Container from 'react-bootstrap/container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 function ContactPage() {
     return (
-        <h1>Contact Page</h1>
+        <Container>
+            <Row className='justify-content-center p-5'>
+                <h3>Want to Chat?</h3>
+            </Row>
+            <Row>
+
+            </Row>
+
+        </Container>
         
     );
 }
