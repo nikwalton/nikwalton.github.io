@@ -36,7 +36,7 @@ function Experience() {
                             <Card.Title>ACM WSU Chapter Club President</Card.Title>
                             <Card.Subtitle className='mb-2 text-muted'>August 2019 - May 2020</Card.Subtitle>
                             <Card.Text>
-                                As Club President for the ACM, It was my goal to establish a safe environment
+                                As club president for the ACM, it was my goal to establish a safe environment
                                 for all members of all skill levels to interact with eachother, talk about tech,
                                 and learn career building skills that many classes do not teach. I did this by organizing 
                                 tech talks &mdash; from industry, faculty, or other students &mdash; holding career building 

@@ -15,7 +15,8 @@ function ArtPage() {
             </Row>
 
             <Row className='justify-content-center'>
-                <p>I'm currently working on learning 3D modeling, rendering, animation, all that.</p>
+                <p className='text-center'>I'm currently working on learning 3D 
+                modeling, rendering, animation, all that.</p>
             </Row>
         </Container>
     );

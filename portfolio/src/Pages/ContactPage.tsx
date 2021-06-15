@@ -15,7 +15,13 @@ function ContactPage() {
             </Row>
             <Row>
                 <Col>
-                 
+                 <h5>Email:</h5>
+                 <a href='mailto:nikawalton2@gmail.com'>nikawalton2@gmail.com</a>
+                 <h5 className='pt-3'>Github:</h5>
+                 <a href='https://github.com/nikwalton'>Github Profile</a>
+                 <br />
+                 <h5 className='pt-3'>LinkedIn:</h5>
+                 <a href='https://www.linkedin.com/in/nikolaus-walton/'>LinkedIn Profile</a>
                 </Col>
             </Row>
 
