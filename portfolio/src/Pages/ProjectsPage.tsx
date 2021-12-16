@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button'
 
 function ProjectsPage() {
     return (
-        <Container>
+        <Container fluid={true}>
             <Row className='justify-content-center p-5'>
                 <h3>Personal Projects</h3>
             </Row>
@@ -47,6 +47,24 @@ function ProjectsPage() {
                         </Card.Body>
                         <Card.Footer>
                                 <small>React, Typescript, Bootstrap</small>
+                            </Card.Footer>
+                    </Card>
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>
+                                StegaText
+                            </Card.Title>
+                            <Card.Subtitle>Project for CPTS 427: Computer Security, Fall 2021</Card.Subtitle>
+                            <Card.Text>
+                            A text editor that allows the user 
+                              to save text in images or audio files using steganographic methods with an 
+                              optional symmetric key encryption component.
+                            </Card.Text>
+                            <Button href='https://github.com/nikwalton/StegaText'>Github Repo</Button>
+                      
+                        </Card.Body>
+                        <Card.Footer>
+                                <small>Python, PyQT5</small>
                             </Card.Footer>
                     </Card>
                 </CardDeck>
