@@ -9,8 +9,6 @@ The website will be updated every so often with new projects, reels, or anything
 else I feel like sharing, so check back often if you are interested!
 
 # Tech Stack
-* React via create-react-app
-* Typescript
-* React-Bootstrap
-* React-Router-DOM
-* Github Pages
+* Svelte
+* Node.js
+* Spaper css
