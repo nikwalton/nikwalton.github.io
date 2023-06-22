@@ -14,3 +14,6 @@ else I feel like sharing, so check back often if you are interested!
 * React-Bootstrap
 * React-Router-DOM
 * Github Pages
+
+## the 2023 update
+This website is officially on my to do list for updating. Im thinking a complete overhaul and redo of the tech stack is in order, thinking of using Svelte as the main driver for the next go around
