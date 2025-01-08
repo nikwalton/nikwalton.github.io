@@ -1,0 +1,35 @@
+---
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nikolaus Walton</title>
+  </head>
+  <body>
+    <div
+      class="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row"
+    >
+      <a class="font-black">NW</a>
+
+      <div
+        class="font-light flex flex-wrap items-center justify-center text-base md:ml-5 md:mr-auto"
+      >
+        <a class="mr-2 p-2 rounded-md bg-slate-100" href="/">Home</a>
+        <a class="mr-2 p-2 rounded-md bg-slate-100" href="#">Projects</a>
+        <a class="mr-2 p-2 rounded-md bg-slate-100" href="https://github.com/nikwalton">Github</a>
+        <a class="mr-2 p-2 rounded-md bg-slate-100" href="#">LinkedIn</a>
+      </div>
+    </div>
+    <slot />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
