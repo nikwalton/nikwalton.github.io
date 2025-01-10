@@ -1,28 +1,56 @@
 ---
+import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import mac from "../assets/logos/mac.svg";
+import cpp from "../assets/logos/cpp.svg";
+import swift from "../assets/logos/swift.svg";
+import python from "../assets/logos/python.svg";
+import typescript from "../assets/logos/typescript.svg";
+import css3 from "../assets/logos/css3.svg";
+import html5 from "../assets/logos/html5.svg";
+import tailwindcss from "../assets/logos/tailwindcss.svg";
+import vscode from "../assets/logos/vscode.svg";
+import xcode from "../assets/logos/xcode.svg";
+import git from "../assets/logos/git.svg";
+import github from "../assets/logos/github.svg";
+
 ---
 
 <MainLayout>
-    <div class="container flex flex-warp mx-auto flex-col">
-        <h1 class="text-8xl font-black leading-snug">Nikolaus Walton</h1>
-        <h2 class="text-4xl leading-snug">Software Engineering and Design</h2>
-        <hr/>
-    
-        <h3>About</h3>
-        <p> I am a junior software engineer and designer with a focus
-            on ease of use and flair. I graduated from Washington State University
-            with a Bachelor of Science in Computer Sciene, and was also awarded the
-            President's Award for Leadership for my contributions to the computer science commuinity
-            at the university. I love to learn new things and try to be quality over quantity whenever I can.
-        </p>
-        <p>
-            My main hobbies outside of programming work are music (production 
-            and DJ) and gaming.
-        </p>
-        <hr/>
-        <h3>The Things I Use Lately</h3>
+  <div class="flex-wrap container mx-auto flex flex-col">
+    <h1 class="text-8xl font-black leading-snug">Nikolaus Walton</h1>
+    <h2 class="text-4xl leading-snug">Software Engineering and Design</h2>
+    <hr />
+
+    <h3>About</h3>
+    <p>
+      I am a junior software engineer and designer with a focus on ease of use
+      and flair. I graduated from Washington State University with a Bachelor of
+      Science in Computer Sciene, and was also awarded the President's Award for
+      Leadership for my contributions to the computer science commuinity at the
+      university. I love to learn new things and try to be quality over quantity
+      whenever I can.
+    </p>
+    <p>
+      My main hobbies outside of programming work are music (production and DJ)
+      and gaming.
+    </p>
+    <hr />
+    <h3>The Things I Use Lately</h3>
+    <div class="flex md:flex-row">
+      <Image src={mac} loading="eager" alt="Logo For Apple Computers" />
+      <Image src={cpp} loading="eager" alt="Logo for the C++ programming language" />
+      <Image src={swift} loading="eager" alt="Logo for the Swift programming language"/>
+      <Image src={python} loading="eager" alt="Logo for the Python programming langauge"/>
+      <Image src={typescript} loading="eager" alt="Logo for the Typescript programming language" />
+      <Image src={html5} loading="eager" alt="Logo for the HTML5 markup language"/> 
+      <Image src={css3} loading="eager" alt="Logo for the CSS3 style sheet language"/>
+      <Image src={tailwindcss} loading="eager" alt="Logo for Tailwind CSS"/>
+      <Image src={vscode} loading="eager" alt="Logo for the VSCode text editior"/>
+      <Image src={xcode} loading="eager" alt="Logo for the XCode IDE"/>
+      <Image src={git} loading="eager" alt="Logo for the Git version control software"/>   
+      <Image src={github} loading="eager" alt="Logo for the Github website"/>
     </div>
+  </div>
 </MainLayout>
