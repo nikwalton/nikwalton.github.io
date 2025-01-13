@@ -19,25 +19,25 @@ import github from "../assets/logos/github.svg";
 
 <MainLayout>
   <div class="flex-wrap container mx-auto flex flex-col">
-    <h1 class="text-8xl font-black leading-snug">Nikolaus Walton</h1>
-    <h2 class="text-4xl leading-snug">Software Engineering and Design</h2>
+    <h1 class="text-8xl font-serif font-black leading-none">Nikolaus Walton</h1>
+    <h2 class="text-4xl font-thin pb-5">Software Engineering and Design</h2>
     <hr />
 
-    <h3>About</h3>
+    <h3 class="text-xl md:text-2xl font-serif">About</h3>
     <p>
       I am a junior software engineer and designer with a focus on ease of use
       and flair. I graduated from Washington State University with a Bachelor of
       Science in Computer Sciene, and was also awarded the President's Award for
       Leadership for my contributions to the computer science commuinity at the
       university. I love to learn new things and try to be quality over quantity
-      whenever I can.
+      whenever I can. Outfit
     </p>
     <p>
       My main hobbies outside of programming work are music (production and DJ)
       and gaming.
     </p>
     <hr />
-    <h3>The Things I Use Lately</h3>
+    <h3 class="text-xl md:text-2xl font-serif">The Things I Use Lately</h3>
     <div class="flex md:flex-row">
       <Image src={mac} loading="eager" alt="Logo For Apple Computers" />
       <Image src={cpp} loading="eager" alt="Logo for the C++ programming language" />
@@ -52,5 +52,7 @@ import github from "../assets/logos/github.svg";
       <Image src={git} loading="eager" alt="Logo for the Git version control software"/>   
       <Image src={github} loading="eager" alt="Logo for the Github website"/>
     </div>
+    <hr />
+    <h3 class="text-xl md:text-2xl font-serif">Featured</h3>
   </div>
 </MainLayout>
