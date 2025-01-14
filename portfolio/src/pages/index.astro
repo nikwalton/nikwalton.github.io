@@ -1,7 +1,10 @@
 ---
+// components, layouts, etc.
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro"
 
+// assets
 import mac from "../assets/logos/mac.svg";
 import cpp from "../assets/logos/cpp.svg";
 import swift from "../assets/logos/swift.svg";
@@ -20,10 +23,10 @@ import github from "../assets/logos/github.svg";
   <div class="container mx-auto flex flex-col flex-wrap">
     <h1 class="font-serif text-8xl font-black leading-none">Nikolaus Walton</h1>
     <h2 class="pb-5 text-4xl font-thin">Software Engineering and Design</h2>
-    <hr />
+    <hr class="m-5"/>
 
-    <h3 class="font-serif text-xl md:text-2xl">About</h3>
-    <p>
+    <h3 class="font-serif text-xl text-center md:text-2xl">About</h3>
+    <p class="p-2 md:text-xl text-left">
       I am a junior software engineer and designer with a focus on ease of use
       and flair. I graduated from Washington State University with a Bachelor of
       Science in Computer Sciene, and was also awarded the President's Award for
@@ -31,14 +34,15 @@ import github from "../assets/logos/github.svg";
       university. I love to learn new things and try to be quality over quantity
       whenever I can.
     </p>
-    <p>
+    <p class="p-2 md:text-xl text-left">
       My main hobbies outside of programming work are music (production and DJ)
       and gaming. I like to work on all types of projects between web, mobile
       and desktop.
     </p>
-    <hr />
-    <h3 class="font-serif text-xl md:text-2xl">The Things I Use Lately</h3>
-    <div class="flex md:flex-row">
+    <p class="p-2 md:text-xl text-left">My projects are made without AI prompting unless stated in the README in the project.</p>
+    <hr class="m-5"/>
+    <h3 class="font-serif text-xl md:text-2xl text-center">The Things I Use Lately</h3>
+    <div class="grid grid-cols-4 justify-items-center">
       <Image src={mac} loading="eager" alt="Logo For Apple Computers" />
       <Image
         src={cpp}
@@ -85,6 +89,7 @@ import github from "../assets/logos/github.svg";
       <Image src={github} loading="eager" alt="Logo for the Github website" />
     </div>
     <hr />
-    <h3 class="font-serif text-xl md:text-2xl">Featured</h3>
+    <h3 class="font-serif text-xl text-center md:text-2xl">Featured</h3>
+    <Card name="CrimsonCode Article" description="Article" tags="Article" link="#" />
   </div>
 </MainLayout>
