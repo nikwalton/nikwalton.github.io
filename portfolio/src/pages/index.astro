@@ -2,7 +2,7 @@
 // components, layouts, etc.
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
-import Card from "../components/Card.astro"
+import Card from "../components/Card.astro";
 
 // assets
 import mac from "../assets/logos/mac.svg";
@@ -23,25 +23,30 @@ import github from "../assets/logos/github.svg";
   <div class="container mx-auto flex flex-col flex-wrap">
     <h1 class="font-serif text-8xl font-black leading-none">Nikolaus Walton</h1>
     <h2 class="pb-5 text-4xl font-thin">Software Engineering and Design</h2>
-    <hr class="m-5"/>
+    <hr class="m-5" />
 
-    <h3 class="font-serif text-xl text-center md:text-2xl">About</h3>
-    <p class="p-2 md:text-xl text-left">
-      I am a junior software engineer and designer with a focus on ease of use
-      and flair. I graduated from Washington State University with a Bachelor of
-      Science in Computer Sciene, and was also awarded the President's Award for
-      Leadership for my contributions to the computer science commuinity at the
-      university. I love to learn new things and try to be quality over quantity
-      whenever I can.
+    <h3 class="text-center font-serif text-xl font-black md:text-2xl">About</h3>
+    <p class="p-2 text-left font-normal md:text-xl">
+      I am a junior software engineer and casual designer whenever I am able to.
+      I graduated from Washington State University with a Bachelor of Science in
+      Computer Sciene, and was also awarded the President's Award for Leadership
+      for my contributions to the computer science commuinity at the university.
+      I love to learn new things and I am constantly adding new tools to my
+      digital toolbelt.
     </p>
-    <p class="p-2 md:text-xl text-left">
+    <p class="p-2 text-left font-normal md:text-xl">
       My main hobbies outside of programming work are music (production and DJ)
       and gaming. I like to work on all types of projects between web, mobile
       and desktop.
     </p>
-    <p class="p-2 md:text-xl text-left">My projects are made without AI prompting unless stated in the README in the project.</p>
-    <hr class="m-5"/>
-    <h3 class="font-serif text-xl md:text-2xl text-center">The Things I Use Lately</h3>
+    <p class="p-2 text-left font-normal md:text-xl">
+      My projects are made without AI prompting unless stated in the README in
+      the project.
+    </p>
+    <hr class="m-5" />
+    <h3 class="text-center font-serif text-xl font-black md:text-2xl">
+      The Things I Use Lately
+    </h3>
     <div class="grid grid-cols-4 justify-items-center">
       <Image src={mac} loading="eager" alt="Logo For Apple Computers" />
       <Image
@@ -89,7 +94,24 @@ import github from "../assets/logos/github.svg";
       <Image src={github} loading="eager" alt="Logo for the Github website" />
     </div>
     <hr />
-    <h3 class="font-serif text-xl text-center md:text-2xl">Featured</h3>
-    <Card name="CrimsonCode Article" description="Article" tags="Article" link="#" />
+    <h3 class="text-center font-serif text-xl font-black md:text-2xl">
+      Featured
+    </h3>
+    <div class="grid grid-cols-4">
+      <Card
+        name="CrimsonCode 2020 Interview"
+        description="Interview done by the student newspaper about the hackathon I directed the organization of."
+        tags={["Article", "Hackathon"]}
+        link="https://dailyevergreen.com/74588/news/hacking-away-at-the-competition/"
+        linkDescription="Link to article"
+      />
+      <Card
+        name="Yelp Clone"
+        description="Final project for the introduction to databases class where my team and I built a full stack clone of Yelp using real data, and a database designed by us as a team."
+        tags={["React", "Coursework"]}
+        link="https://github.com/nikwalton/YelpClone"
+        linkDescription="Link to Github"
+      />
+    </div>
   </div>
 </MainLayout>

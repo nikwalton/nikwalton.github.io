@@ -1,13 +1,35 @@
 ---
-const {name, description, tags, link} = Astro.props;
+export interface Props {
+  name: string;
+  description: string;
+  tags: string[];
+  link: string;
+  linkDescription: string;
+}
+
+const { name, description, tags, link, linkDescription } = Astro.props as Props;
 ---
-<div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <div class="px-6  py-4">
-        <div class="font-bold text-xl mb-2">{name}</div>
-        <p>{description}</p>
-        <a>{link}</a>
-        <div class="px-6 pt-4 pb-1">
-            <span class="inline-block bg-gray-200/20 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tags}</span>
-        </div>
+
+<div
+  class="mb-5 mr-5 mt-4 max-w-sm overflow-hidden rounded bg-neutral-100 shadow-lg"
+>
+  <div class="px-6 py-4">
+    <div class="mb-2 text-xl font-bold">{name}</div>
+    <p class="mb-5">{description}</p>
+
+    <a
+      class="rounded-lg bg-slate-200 p-2 shadow-md transition ease-in-out hover:bg-emerald-500 hover:text-white"
+      href={link}>{linkDescription}</a
+    >
+
+    <div class="mt-2 pb-1 pt-4">
+      {
+        tags.map((tag) => (
+          <span class="mb-2 mr-2 inline-block rounded-full bg-white px-3 py-1 text-sm font-black">
+            {tag}
+          </span>
+        ))
+      }
     </div>
+  </div>
 </div>
