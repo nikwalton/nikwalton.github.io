@@ -1,17 +1,20 @@
 ---
-import "../globals.css"
+import "../globals.css";
 import Image from "astro/components/Image.astro";
 import ClientRouter from "astro/components/ClientRouter.astro";
 import { fade } from "astro:transitions";
 ---
 
-<html lang="en" transition:animate={fade({duration: '0.1s'})}>
+<html lang="en" transition:animate={fade({ duration: "0.1s" })}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio website for Nikolaus Walton a software engineer and casual designer."  />
+    <meta
+      name="description"
+      content="Portfolio website for Nikolaus Walton a software engineer and casual designer."
+    />
     <title>Nikolaus Walton</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.svg" />clea
+    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
     <ClientRouter />
   </head>
   <body class="min-h-screen">
@@ -43,10 +46,14 @@ import { fade } from "astro:transitions";
       </div>
     </div>
     <slot />
-    
+
     <hr />
     <footer class="p-2">
-      <p class="text-sm leading-none">&copy 2025 nikolaus walton. website powered by <a class="text-blue-600" href="https://astro.build/">Astro</a></p>
+      <p class="text-sm leading-none">
+        &copy 2025 nikolaus walton. website powered by <a
+          class="text-blue-600"
+          href="https://astro.build/">Astro</a>
+      </p>
     </footer>
   </body>
 </html>
