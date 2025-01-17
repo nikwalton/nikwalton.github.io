@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Outfit-Variable"],
-        serif: ["Sharpie-Variable"],
+        sans: ["Outfit-Variable", "sans-serif"],
+        serif: ["Sharpie-Variable", "serif"],
       },
     },
   },

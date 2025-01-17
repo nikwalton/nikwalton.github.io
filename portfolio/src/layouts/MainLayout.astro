@@ -1,19 +1,21 @@
 ---
-import "../globals.css";
-
+import "../globals.css"
 import Image from "astro/components/Image.astro";
-import astro from "../assets/logos/astro.svg";
+import ClientRouter from "astro/components/ClientRouter.astro";
+import { fade } from "astro:transitions";
 ---
 
-<html lang="en">
+<html lang="en" transition:animate={fade({duration: '0.1s'})}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio website for Nikolaus Walton a software engineer and casual designer."  />
     <title>Nikolaus Walton</title>
+    <ClientRouter />
   </head>
   <body class="min-h-screen">
     <div
-      class="container-2xl sticky top-0 z-50 mx-auto mb-10 flex flex-col flex-wrap items-center bg-white/20 p-5 shadow-md backdrop-blur-lg md:flex-row"
+      class="container-2xl min-w-screen sticky top-0 z-50 mx-auto mb-10 flex flex-col flex-wrap items-center bg-white/20 p-5 shadow-md backdrop-blur-lg md:flex-row"
     >
       <p class="font-serif font-black">NW</p>
 
@@ -21,7 +23,7 @@ import astro from "../assets/logos/astro.svg";
         class="flex flex-wrap items-center justify-center text-base font-light md:ml-5 md:mr-auto"
       >
         <a
-          class="mr-2 rounded-s-full bg-slate-100 p-2 shadow-md transition ease-in-out hover:bg-emerald-500 hover:text-white"
+          class="mr-2 rounded-s-full bg-slate-100 p-2 pl-3 shadow-md transition ease-in-out hover:bg-emerald-600 hover:text-white"
           href="/">Home</a
         >
         <a
@@ -33,7 +35,7 @@ import astro from "../assets/logos/astro.svg";
           href="https://github.com/nikwalton">Github</a
         >
         <a
-          class="mr-2 rounded-e-full bg-slate-100 p-2 shadow-md transition ease-in-out hover:bg-emerald-500 hover:text-white"
+          class="mr-2 rounded-e-full bg-slate-100 p-2 pr-3 shadow-md transition ease-in-out hover:bg-emerald-500 hover:text-white"
           href="https://www.linkedin.com/in/nikolaus-walton-565a07113"
           >LinkedIn</a
         >
@@ -42,8 +44,8 @@ import astro from "../assets/logos/astro.svg";
     <slot />
     
     <hr />
-    <footer class="p-5">
-      <p class="text-sm">&copy 2025 nikolaus walton. website powered by <a class="text-blue-500" href="https://astro.build/">Astro</a></p>
+    <footer class="p-2">
+      <p class="text-sm leading-none">&copy 2025 nikolaus walton. website powered by <a class="text-blue-600" href="https://astro.build/">Astro</a></p>
     </footer>
   </body>
 </html>
