@@ -1,0 +1,21 @@
+---
+import { ClientRouter } from "astro:transitions";
+import "../styles/global.css";
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+    <meta
+      name="description"
+      content="Portfolio website and general ramblings made for and by Nikolaus
+      Walton, a software engineer and deisgner based in the Pacific Northwest."
+    />
+
+    <title>Nikolaus Walton</title>
+    <ClientRouter />
+
+    <slot />
+  </head>
+</html>
