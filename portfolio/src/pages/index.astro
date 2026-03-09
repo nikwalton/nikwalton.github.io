@@ -1,5 +1,18 @@
 ---
 import GeneralLayout from "../layouts/GeneralLayout.astro";
+
+import CppIcon from "../images/Cpp.svg";
+import GithubIcon from "../images/Github.svg";
+import TypescriptIcon from "../images/Typescript.svg";
+import Html5Icon from "../images/Html5.svg";
+import Css3Icon from "../images/Css3.svg";
+import ClaudeIcon from "../images/Claude.svg";
+import MacIcon from "../images/Mac.svg";
+import PythonIcon from "../images/Python.svg";
+import VscodeIcon from "../images/Vscode.svg";
+import SwiftIcon from "../images/Swift.svg";
+import NotionIcon from "../images/Notion.svg";
+import FigmaIcon from "../images/Figma.svg";
 ---
 
 <html lang="en">
@@ -9,14 +22,59 @@ import GeneralLayout from "../layouts/GeneralLayout.astro";
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>NIKOLAUS WALTON</title>
   </head>
   <body>
     <GeneralLayout>
-      <h1 class="font-eva text-9xl">
-        NIKOLAUS <br /> WALTON
+      <h1 class="font-eva text-9xl tracking-tight">
+        NIKOLAUS ANDREW <br /> WALTON
       </h1>
-      <p class="font-[Arial] font-bold text-5xl">Software Engineer</p>
+      <p class="font-[Arial] font-bold text-5xl">
+        Software Engineer. Designer?
+      </p>
+
+      <hr />
+      <h2 class="font-eva text-3xl tracking-tight text-center">ABOUT</h2>
+      <p class="font-[Arial] leading-6">
+        I am a junior software engineer and casual designer. I graduated from
+        Washington State University with a bachelors of science in computer
+        science. I was awarded the President's Award for Leadership for my
+        contributions to the computer science community at the university.
+      </p>
+
+      <p class="font-[Arial]">
+        My main hobbies outside of programming work are music, gaming, and 3D
+        printing. For coding, I generally like to work on all types of projects
+        across web, mobile and desktop.
+      </p>
+
+      <p class="font-[Arial]">
+        My AI usage is limited to programming contexts only. I refuse to
+        generate images, videos, etc for my work. Accelerating the creative
+        process is dumb and detrimental to creative work. Even when used, I
+        limit my prompting as much as possible to mitigate environmental impact,
+        also just to challenge myself and keep my skills sharp.
+      </p>
+
+      <hr />
+      <h2 class="font-eva text-3xl text-center">TOOLS</h2>
+      <div class="grid grid-cols-4 justify-items-center">
+        <CppIcon width={100} height={100} aria-label="C++" />
+        <PythonIcon width={100} height={100} arial-label="Python" />
+        <SwiftIcon width={100} height={100} aria-label="Swift" />
+        <GithubIcon width={100} height={100} aria-label="Github" />
+        <Html5Icon width={100} height={100} aria-label="HTML 5" />
+        <TypescriptIcon width={100} height={100} aria-label="Typescript" />
+        <Css3Icon width={100} height={100} aria-label="CSS 3" />
+        <ClaudeIcon width={100} height={100} aria-label="Claude" />
+        <MacIcon width={100} height={100} aria-label="MacOS" />
+        <VscodeIcon width={100} height={100} aria-label="VS Code" />
+        <NotionIcon width={100} height={100} aria-label="Notion" />
+        <FigmaIcon width={100} height={100} aria-label="Figma" />
+      </div>
+      <hr />
+      <h2 class="font-eva
+          text-3xl
+          text-center">CONTACT</h2>
     </GeneralLayout>
   </body>
 </html>
