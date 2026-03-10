@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "test:coverage": "bun test --coverage"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
@@ -21,5 +24,8 @@
     "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.1",
     "three": "^0.183.2"
+  },
+  "devDependencies": {
+    "jsdom": "^28.1.0"
   }
 }
