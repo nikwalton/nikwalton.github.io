@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import NikLogo from "../images/NikLogo.svg";
+import Dither from "../components/Dither";
 ---
 
 <html>
@@ -14,15 +15,30 @@ import NikLogo from "../images/NikLogo.svg";
     />
 
     <title>Nikolaus Andrew Walton</title>
-
-    <slot />
   </head>
-  <footer>
-    <div class="mx-2 flex items-center">
-      <NikLogo width={50} height={50} />
-      <p class="px-2 font-extralight text-sm">&copy; 2026</p>
+  <body class="m-0 p-0">
+    <div class="fixed w-screen h-full">
+      <Dither
+        client:load
+        waveColor={[0.5, 0.5, 0.5]}
+        disableAnimation={false}
+        mouseRadius={0.3}
+        colorNum={4}
+        waveAmplitude={0.3}
+        waveFrequency={1.0}
+        waveSpeed={0.02}
+      />
     </div>
-  </footer>
 
+    <div class="relative">
+      <slot />
+    </div>
 
+    <footer class="bg-white rounded relative">
+      <div class="mx-2 flex items-center">
+        <NikLogo width={50} height={50} />
+        <p class="px-2 font-extralight text-sm">&copy; 2026</p>
+      </div>
+    </footer>
+  </body>
 </html>
