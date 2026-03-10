@@ -25,39 +25,41 @@ import FigmaIcon from "../images/Figma.svg";
   </head>
   <body>
     <GeneralLayout>
-      <h1 class="font-eva text-9xl tracking-tight">
-        NIKOLAUS ANDREW <br /> WALTON
-      </h1>
-      <p class="font-[Arial] font-bold text-5xl">
-        Software Engineer. Designer?
-      </p>
-
+      <div class="container mx-auto">
+        <h1 class="font-eva text-9xl tracking-tight">
+          NIKOLAUS ANDREW <br /> WALTON
+        </h1>
+        <p class="font-[Arial] font-bold text-5xl">
+          Software Engineer. Designer?
+        </p>
+      </div>
       <hr />
-      <h2 class="font-eva text-3xl tracking-tight text-center">ABOUT</h2>
-      <p class="font-[Arial] leading-6">
-        I am a junior software engineer and casual designer. I graduated from
-        Washington State University with a bachelors of science in computer
-        science. I was awarded the President's Award for Leadership for my
-        contributions to the computer science community at the university.
-      </p>
+      <div class="container mx-auto">
+        <h2 class="font-eva text-3xl tracking-tight text-center">ABOUT</h2>
+        <p class="font-[Arial] p-2 leading-8">
+          I am a junior software engineer and casual designer. I graduated from
+          Washington State University with a bachelors of science in computer
+          science. I was awarded the President's Award for Leadership for my
+          contributions to the computer science community at the university.
+        </p>
 
-      <p class="font-[Arial]">
-        My main hobbies outside of programming work are music, gaming, and 3D
-        printing. For coding, I generally like to work on all types of projects
-        across web, mobile and desktop.
-      </p>
+        <p class="font-[Arial] p-2 leading-8">
+          My main hobbies outside of programming work are music, gaming, and 3D
+          printing. For coding, I generally like to work on all types of
+          projects across web, mobile and desktop.
+        </p>
 
-      <p class="font-[Arial]">
-        My AI usage is limited to programming contexts only. I refuse to
-        generate images, videos, etc for my work. Accelerating the creative
-        process is dumb and detrimental to creative work. Even when used, I
-        limit my prompting as much as possible to mitigate environmental impact,
-        also just to challenge myself and keep my skills sharp.
-      </p>
-
+        <p class="font-[Arial] p-2 leading-8">
+          My AI usage is limited to programming contexts only. I refuse to
+          generate images, videos, etc for my work. Accelerating the creative
+          process is dumb and detrimental to creative work. Even when used, I
+          limit my prompting as much as possible to mitigate environmental
+          impact, also just to challenge myself and keep my skills sharp.
+        </p>
+      </div>
       <hr />
       <h2 class="font-eva text-3xl text-center">TOOLS</h2>
-      <div class="grid grid-cols-4 justify-items-center">
+      <div class="container mx-auto grid grid-cols-4 justify-items-center">
         <CppIcon width={100} height={100} aria-label="C++" />
         <PythonIcon width={100} height={100} arial-label="Python" />
         <SwiftIcon width={100} height={100} aria-label="Swift" />
@@ -72,9 +74,20 @@ import FigmaIcon from "../images/Figma.svg";
         <FigmaIcon width={100} height={100} aria-label="Figma" />
       </div>
       <hr />
-      <h2 class="font-eva
-          text-3xl
-          text-center">CONTACT</h2>
+      <h2 class="font-eva text-3xl text-center">NOTABLE THINGS</h2>
+      <hr />
+      <h2 class="font-eva text-3xl text-center">CONTACT</h2>
+      <hr />
+      <div class="container mx-auto justify-items-center">
+        <iframe
+          src="https://silly-gruyere-373.notion.site/ebd//31e06b2ab2e5802988d0e81e291aeeda"
+          title="Contact Form"
+          width="100%"
+          height="600"
+          loading="eager"
+          allowfullscreen></iframe>
+      </div>
+      <hr />
     </GeneralLayout>
   </body>
 </html>

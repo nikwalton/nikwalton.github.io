@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import NikLogo from "../images/NikLogo.svg";
 ---
 
 <html>
@@ -16,4 +17,12 @@ import "../styles/global.css";
 
     <slot />
   </head>
+  <footer>
+    <div class="mx-2 flex items-center">
+      <NikLogo width={50} height={50} />
+      <p class="px-2 font-extralight text-sm">&copy; 2026</p>
+    </div>
+  </footer>
+
+
 </html>
